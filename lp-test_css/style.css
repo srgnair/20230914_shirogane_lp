@@ -29,6 +29,14 @@ header {
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
 .header__logo {
     display: inline-block;
     width: 15%;
@@ -84,7 +92,7 @@ header {
 
 @media screen and (max-width: 768px) {
     .first__text1 {
-        font-size: 5vw;
+        font-size: 24px;
         padding: 0;
     }
 }
@@ -101,7 +109,7 @@ header {
 
     .first__text2,
     .first__text3 {
-        font-size: 1vw;
+        font-size: 18px;
     }
 }
 
@@ -117,6 +125,12 @@ header {
 .news {
     width: 850px;
     margin: 40px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .news {
+        width: 100vw;
+    }
 }
 
 .news__title ::before,
@@ -182,9 +196,7 @@ header {
     padding: 20px 10px;
 }
 
-.about {
-    margin: 70px 200px 70px;
-}
+.about {}
 
 @media screen and (max-width: 768px) {
     .about {
@@ -203,12 +215,14 @@ header {
 .about__title h2 {
     line-height: 30px;
     font-size: 25px;
+    padding-bottom: 30px;
 }
 
 .about__content {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -219,15 +233,14 @@ header {
 
 .about__content p {
     display: block;
-    width: 40%;
+    width: 35%;
     height: auto;
     line-height: 30px;
     font-size: 15px;
 }
 
 .about__content img {
-    width: 40%;
-    min-width: 40%;
+    width: 35%;
 }
 
 .service {
@@ -254,6 +267,13 @@ header {
     grid-template-columns: 2fr 2fr;
     margin: 0 auto;
     width: 850px;
+}
+
+@media screen and (max-width: 768px) {
+    .service__content {
+        margin: 0;
+        width: 100%;
+    }
 }
 
 .service__content-left {
@@ -366,6 +386,13 @@ header {
     padding-bottom: 30px;
 }
 
+@media screen and (max-width: 768px) {
+    .blog__content {
+        margin: 0;
+        width: 100%;
+    }
+}
+
 .blog__content-card {
     position: relative;
     width: 30%;
@@ -433,7 +460,6 @@ header {
 }
 
 .company {
-    /*上下ボーダーのつけ方*/
     margin: 100px auto;
 }
 
@@ -475,7 +501,7 @@ header {
 
 .recruit h2 {
     width: 50%;
-    height: 300px;
+    height: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
